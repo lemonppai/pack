@@ -39,16 +39,15 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            // presets: ['@babel/preset-env']
+            presets: ['@babel/preset-env']
           }
         }
-      }/* ,
+      },
       {
         test: /\.(css|scss)$/,
         use: [
           'style-loader',
           'css-loader?sourceMap',
-          'postcss-loader?sourceMap',
           'sass-loader?sourceMap'
         ]
       },
@@ -59,7 +58,7 @@ module.exports = {
       {
         test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
         loader: 'url-loader?limit=10000'
-      } */
+      }
     ]
   },
 
